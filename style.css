@@ -1,0 +1,1137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.max-width{
+    max-width:1300px;
+    padding:0 80px;
+    margin:auto;
+}
+
+.navbar{
+    position:fixed;
+    z-index:999;
+    width:100%;
+    padding:30px 0;
+    /*background:crimson;*/
+    font-family:"Century Gothic";
+    transition:all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding:15px 0;
+    background:#000;
+}
+
+.navbar .max-width{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.navbar .logo a{
+    color:#fff;
+    font-size:35px;
+    font-weight:600;
+}
+
+.navbar .logo a span{
+    color:crimson;
+    transition:all 0.3s ease;
+}
+
+.navbar.sticky .logo a span{
+    color:#fff;
+}
+
+.navbar .menu li{
+    list-style:none;
+    display:inline-block;
+}
+
+.navbar .menu li a{
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+    margin-left:25px;
+    transition:color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color:crimson;
+}
+
+.navbar.sticky .menu li a:hover{
+    color:#fff;
+}
+
+.menu-btn{
+    color:#fff;
+    font-size:23px;
+    cursor:pointer;
+    display:none;
+}
+
+.home{
+    display:flex;
+    background:url("image/dupage-web-design.jpg") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    height:87vh;
+    min-height:500px;
+    font-family:"Century Gothic";
+    color:#fff;
+}
+
+
+
+.home .max-width{
+    margin:auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size:27px;
+    animation:anim 2s;
+}
+
+.home .home-content .text-2{
+    font-size:32px;
+    font-weight:600;
+    margin-left:-3px;
+    animation:anim 2s;
+    animation:anim 1.5s .5s backwards;
+}
+
+.home .home-content .text-3{
+    font-size:20px;
+    margin:5px 0;
+    animation:anim 2s;
+}
+
+.home .home-content .text-3 span{
+    color:#000;
+    font-weight:bold;
+}
+
+.home .home-content a{
+    display:inline-block;
+    background:crimson;
+    color:#fff;
+    font-size:25px;
+    padding:12px 36px;
+    font-family:"Century Gothic";
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid crimson;
+    transition:all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color:black;
+    font-size:20px;
+    font-weight:600;
+    background:none;
+}
+
+.home .home-content .social a{
+    color:#3b5998;
+    background:#fff;
+    padding:10px 20px;
+    margin-top:40px;
+}
+
+.home .home-content .social a:hover{
+    color:#3b5998;
+    background:#fff;
+}
+
+.social #insta{
+    color:#bc2a8d;
+}
+
+.social #git{
+    color:white;
+    background:black;
+}
+
+.social #git:hover{
+    color:black;
+    background:white;
+}
+
+@keyframes anim{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+section{
+    padding:100px 0;
+}
+.about, .services ,footer{
+    font-family:"Century Gothic";
+}
+
+.about .title{
+    position:relative;
+    font-family:"Century Gothic";
+    text-align:center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:60px;
+    padding-bottom:20px;
+}
+
+.about .title::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    bottom:0px;
+    left:50%;
+    height:3px;
+    background:#000;
+    transform:translateX(-50%)    
+}
+
+.about .title::after{
+    content:"who i am";
+    position:absolute;
+    font-size:20px;
+    font-weight:bold;
+    color:crimson;
+    bottom:-12px;
+    left:50%;
+    padding:5px;
+    background:#fff;
+    transform:translateX(-50%)    
+}
+
+.about .about-content,
+.skills .skills-content,
+.contact .contact-content{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;    
+}
+
+.about .about-content .left{
+    width:45%;
+}
+
+.about .about-content .left img{
+    height:430px;
+    width:400px;
+    border-radius:6px;
+    border:5px solid crimson;
+    object-fit:cover;
+    box-shadow:0 14px 28px rgba(0,0,0,0.80),0 10px 10px rgba(0,0,0,0.90);
+}
+
+
+.about .about-content .right{
+    width:55%;
+}
+
+.about .about-content .right .text{
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.about .about-content .right .text span{
+    color:crimson;
+}
+
+.about .about-content .right p{
+    font-size:20px;
+    text-align:justify;
+}
+
+.about .about-content .right a{
+    display:inline-block;
+    background:crimson;
+    color:#fff;
+    font-size:18px;
+    height:60px;
+    padding:15px 30px;
+    font-family:"Century Gothic";
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid crimson;
+    transition:all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+    color:crimson;
+    background:none;
+}
+
+.about .about-content .column{
+    width:50%;
+}
+
+.services, .work{
+    padding:100px 0;
+    background:url("image/do-stunning-background-videos-for-your-website.png") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    color:#fff;
+}
+
+.services .title{
+    position:relative;
+    font-family:"Century Gothic";
+    text-align:center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:60px;
+    padding-bottom:20px;
+}
+.services .title::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    bottom:0px;
+    left:50%;
+    height:3px;
+    background:#fff;
+    transform:translateX(-50%)    
+}
+
+.services .title::after{
+    content:"what i provide";
+    position:absolute;
+    font-size:20px;
+    font-weight:bold;
+    color:crimson;
+    bottom:-12px;
+    left:50%;
+    padding:5px;
+    background:#000;
+    transform:translateX(-50%)    
+}
+
+.services-content{
+    display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.services-content > div {
+  margin: 20px;
+}
+.services .services-content .card{
+    width:calc(39% - 30px);
+    background:#000;
+    text-align:center;
+    border-radius:6px;
+    padding:50px 20px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+     box-shadow:0 10px 25px rgba(255, 255, 255),0 10px 10px rgb(255, 255, 255);
+}
+
+.services .services-content .card:hover{
+    background:crimson;
+}
+
+.services .services-content .card .box{
+    transition:all 0.3s ease;
+}
+
+.services .services-content .card:hover .box{
+    transform:scale(1.05);
+}
+
+.services .services-content .card i{
+    font-size:50px;
+    color:crimson;
+    transition:color 0.3s ease;
+    
+}
+
+.services .services-content .card:hover i{
+    color:#fff;
+}
+
+.services .services-content .card .text{
+    font-size:30px;
+    font-weight:bold;
+    margin:10px 0 7px 0;
+}
+
+.skills .title{
+    position:relative;
+    font-family:"Century Gothic";
+    text-align:center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:60px;
+    padding-bottom:20px;
+}
+
+.skills .title::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    bottom:0px;
+    left:50%;
+    height:3px;
+    background:#000;
+    transform:translateX(-50%)    
+}
+
+.skills .title::after{
+    content:"What i know";
+    position:absolute;
+    font-size:20px;
+    font-weight:bold;
+    color:crimson;
+    bottom:-12px;
+    left:50%;
+    padding:5px;
+    background:#fff;
+    transform:translateX(-50%)    
+}
+
+.skills .skills-content .column{
+    width:calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size:30px;
+    font-weight:600;
+    margin-bottom:60px;
+}
+
+.skills .skills-content a{
+    display:inline-block;
+    background:crimson;
+    color:#fff;
+    font-size:18px;
+    padding:8px 16px;
+    font-family:"Century Gothic";
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid crimson;
+    transition:all 0.3s ease;
+}
+
+.skills .skills-content a:hover{
+    color:crimson;
+    background:none;
+    font-weight:600;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom:15px;
+}
+
+.skills .skills-content .right .info{
+    display:flex;
+    align-items:center;
+    margin-bottom:5px;
+    justify-content:space-between;
+}
+
+.skills .skills-content .right span{
+    font-weight:600;
+    font-size:18px;
+}
+
+.skills .skills-content .right .line{
+    height:5px;
+    width:100%;
+    background:lightgrey;
+    position:relative;
+}
+
+.skills .skills-content .right .line::before{
+    content:"";
+    height:100%;
+    width:80%;
+    background:crimson;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.skills .skills-content .right .html::before{
+    width:90%;
+}
+
+.skills .skills-content .right .html::before{
+    width:90%;
+}
+
+.skills .skills-content .right .css::before{
+    width:80%;
+}
+
+.skills .skills-content .right .JavaScript::before{
+    width:60%;
+}
+
+.skills .skills-content .right .php::before{
+    width:60%;
+}
+
+.skills .skills-content .right .mysql::before{
+    width:70%;
+}
+
+.skills .skills-content .right .python::before{
+    width:60%;
+}
+
+.skills .skills-content .right .c::before{
+    width:50%;
+}
+
+.skills .skills-content .right .C::before{
+    width:50%;
+}
+
+
+.skills p{
+    font-size:20px;
+    text-align:justify
+}
+
+.work, .education{
+    padding:100px 0;
+    background:url("image/do-stunning-background-videos-for-your-website.png") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    color:#fff;
+}
+
+.work .title{
+    position:relative;
+    font-family:"Century Gothic";
+    text-align:center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:50px;
+    padding-bottom:20px;
+}
+.work .title::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    bottom:0px;
+    left:50%;
+    height:3px;
+    background:#fff;
+    transform:translateX(-50%)    
+}
+
+.work .title::after{
+    content:"made by me";
+    position:absolute;
+    font-size:20px;
+    font-weight:bold;
+    color:crimson;
+    bottom:-12px;
+    left:50%;
+    padding:5px;
+    background:#000;
+    transform:translateX(-50%)    
+}
+
+.work-content{
+    display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.work-content > div {
+  margin: 20px;
+}
+.work .work-content .card-edu{
+    width:calc(33% - 50px);
+    background:#000;
+    text-align:center;
+    border-radius:6px;
+    padding:50px 20px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+     box-shadow:0 10px 25px rgba(255, 255, 255),0 10px 10px rgb(255, 255, 255);
+}
+
+.work .work-content .card-edu p{
+    font-size:20px; 
+    color:white;    
+}
+
+.work .work-content .card-edu:hover{
+    background:crimson;
+}
+
+.work .work-content .card-edu .box{
+    transition:all 0.3s ease;
+}
+
+.work .work-content .card-edu:hover .box{
+    transform:scale(1.05);
+}
+
+.work .work-content .card-edu i{
+    font-size:50px;
+    color:crimson;
+    transition:color 0.3s ease;
+    
+}
+
+.work .work-content .card-edu:hover i{
+    color:#fff;
+}
+
+.work .work-content .card-edu .text{
+    font-size:30px;
+    font-weight:bold;
+    margin:10px 0 7px 0;
+}
+
+.education .title{
+    position:relative;
+    font-family:"Century Gothic";
+    text-align:center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:60px;
+    padding-bottom:20px;
+}
+
+.education .title::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    bottom:0px;
+    left:50%;
+    height:3px;
+    background:#fff;
+    transform:translateX(-50%)    
+}
+
+.education .title::after{
+    content:"my knowledge";
+    position:absolute;
+    font-size:20px;
+    font-weight:bold;
+    color:crimson;
+    bottom:-12px;
+    left:50%;
+    padding:5px;
+    background:#000;
+    transform:translateX(-50%)    
+}
+
+.education .carousel .card{
+    background:#000;
+    border-radius:6px;
+    padding:25px 35px; 
+    text-align:center; 
+    transition:all 0.3s ease;  
+}
+
+.education .carousel .cards{
+    background:#000;
+    border-radius:6px;
+    padding:25px 35px; 
+    text-align:center; 
+    transition:all 0.3s ease;  
+}
+
+.education .carousel .card:hover{
+    background:crimson;
+}
+
+.education .carousel .card .box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transition:all 0.3s ease;     
+}
+
+.eduaction .carousel .card:hover .box{
+    transform:scale(1.2);
+}
+
+.education .carousel .card .text{
+    font-size:25px;
+    font-weight:500;
+    margin:10px 0 7px 0;
+}
+
+.education .carousel .card img{
+    height:150px;
+    width:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid  crimson; 
+    transition:all 0.3s ease;     
+}
+
+.education .carousel .card:hover img{
+    border-color:#fff;
+}
+
+education .carousel .cards{
+    background:#222;
+    border-radius:6px;
+    padding:25px 35px; 
+    text-align:center; 
+    transition:all 0.3s ease;  
+}
+
+.education .carousel .cards:hover {
+    content:"View";
+    color:#000;
+    background:crimson;
+}
+
+.education .carousel .cards .boxs{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transition:all 0.3s ease;     
+}
+
+.eduaction .carousel .cards:hover .boxs{
+    transform:scale(1.2);
+}
+
+.education .carousel .cards .text{
+    font-size:25px;
+    font-weight:500;
+    margin:10px 0 7px 0;
+}
+
+.education .carousel .cards img{
+    height:150px;
+    width:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid  crimson; 
+    transition:all 0.3s ease;     
+}
+
+.education .carousel .cards:hover img{
+    border-color:#fff;
+}
+
+.owl-dots{
+    text-align:center;
+    margin-top:20px;
+}
+
+.owl-dot{
+    height:13px;
+    width:13px;
+    outline:none!important;
+    border-radius:50%;
+    border:2px solid crimson !important;
+    margin:0 5px;
+    transition:all 0.3s ease
+}
+
+.owl-dot.active{
+    width:35px;
+    border-radius:14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background:crimson!important;
+}
+
+.contact .title{
+    position:relative;
+    font-family:"Century Gothic";
+    text-align:center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:60px;
+    padding-bottom:20px;
+}
+
+.contact .title::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    bottom:0px;
+    left:50%;
+    height:3px;
+    background:#000;
+    transform:translateX(-50%)    
+}
+
+.contact .title::after{
+    content:"get in touch";
+    position:absolute;
+    font-size:20px;
+    font-weight:bold;
+    color:crimson;
+    bottom:-12px;
+    left:50%;
+    padding:5px;
+    background:#fff;
+    transform:translateX(-50%)    
+}
+
+.contact .contact-content .column{
+    width:calc(50% - 30px);
+    
+}
+
+.contact .contact-content .text{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.contact .contact-content .left p{
+    text-align:justify;
+}
+
+.contact .contact-content .left .icon{
+    margin:10px 0;
+}
+
+.contact .contact-content .row{
+    display:flex;
+    height:65px;
+    align-items:center;
+}
+
+.contact .contact-content .row .info{
+    margin-left:30px;
+}
+
+.contact .contact-content .row i{
+    font-size:25px;
+    color:crimson;
+}
+
+.head{
+    font-weight:600;
+}
+
+.sub-title{
+    color:#333;
+}
+
+
+
+.contact .right  form .fields{
+    display:flex;
+}
+
+.contact .right  form .field,
+.fields,field{
+    height:45px;
+    width:100%;
+    margin-bottom:15px;
+}
+
+.textarea{
+    height:80px;
+    width:100%;
+}
+
+.username{
+    margin-right:10px;
+}
+
+.email{
+    margin-left:10px;
+}
+
+form .field input{
+    height:100%;
+    width:94%;
+    border:1px solid #222;
+    border-radius:6px;
+    outline:none;
+    padding:0 15px;
+    font-size:17px;
+    font-family:"Century Gothic";
+}
+
+.textarea textarea{
+    padding-top:10px;
+    resize:none;
+}
+
+.contact .right form .button{
+    height:47px;
+    width:170px;
+}
+
+.contact .right form .button button{
+    width:100%;
+    height:100%;
+    border:2px solid crimson;
+    background:crimson;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    border-radius:6px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.contact .right form .button button:hover{
+    background:none;
+    color:crimson;
+}
+
+footer{
+    background:#111;
+    padding:10px 20px;
+    color:#fff;
+}
+
+footer span a{
+    color:crimson;
+    text-decoration:none;
+}
+
+footer span a:hover{
+    text-decoration:underline;
+}
+
+.scroll-up-btn{
+    position:fixed;
+    height:45px;
+    width:42px;
+    background:crimson;
+    right:30px;
+    bottom:10px;
+    text-align:center;
+    line-height:45px;
+
+    z-index:9999;
+    font-size:30px;
+    border-radius:6px;
+    cursor:pointer;
+    opacity:0;
+    pointer-events:none;
+    transition:all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    bottom:30px;
+    opacity:1;
+    pointer-events:auto;
+}
+
+
+@media(max-width:1300px){
+    .home .max-width{
+        margin-left:0px;
+    }
+}
+
+@media(max-width:1104px){
+    .about .about-content .left img{
+    height:350px;
+    width:350px;
+    box-shadow:0 14px 28px rgba(0,0,0,0.80),0 10px 10px rgba(0,0,0,0.90);
+}
+}
+
+@media(max-width:991px){
+    .home .max-width{
+        margin-left:0px;
+    }
+}
+
+@media(max-width:947px){
+    .max-width{
+        padding:0 50px;
+    }
+
+    .menu-btn{
+        display:block;
+        z-index:999;
+    }
+
+    .menu-btn i.active:before{
+        content:"\f00d";
+    }
+
+    .navbar .menu{
+        position:fixed;
+        height:100vh;
+        width:40%;
+        background:#111;
+        top:0%;
+        left:-100%;
+        text-align:center;
+        padding-top:100px;
+        transition:all 0.5s ease;
+    }
+
+    .navbar .menu.active{
+        left:0;
+    }
+
+    .navbar .menu li{
+        display:block;
+    }
+
+    .navbar .menu li a{
+        display:inline-block;
+        margin:20px 0;
+        font-size:25px;
+    }
+
+    .home .home-content .text-2{
+        font-size:38px;
+    }
+    
+    .home .home-content .text-3{
+        font-size:25px;
+    }
+
+    .image{
+        height:40vh;
+    }
+
+    .home .home-content a{
+        font-size:23px;
+        padding:10px 30px;
+    }
+
+    .max-width{
+        max-width:800px;
+    }
+
+    .about .about-content .column{
+        width:100%:
+    }
+
+    .about .about-content .left{
+        display:flex;
+        justify-content:center;
+        margin:0 auto 60px;
+    }
+
+    .about .about-content .right{
+        flex:100%;
+    }
+
+    .services .services-content .card{
+        width:calc(50% - 10px);
+        margin-bottom:20px;
+        margin-left:1rem;
+    }
+
+    .work .work-content .card-edu{
+        width:calc(50% - 0px);
+        margin-bottom:20px;
+        margin-left:4rem;
+    }
+
+    .contact .contact-content .column,
+    .skills .skills-content .column{
+        width:100%;
+        margin-bottom:35px;
+    }
+
+}
+
+@media(max-width:690px){
+    .home .home-content .text-2{
+        font-size:60px;
+    }
+    
+    .home .home-content .text-3{
+        font-size:32px;
+    }
+
+    .image{
+        height:40vh;
+    }
+
+    .max-width{
+        padding:0 23px;
+    }
+
+    .home .home-content a{
+        font-size:20px;
+    }
+
+    .services .services-content .card,
+    .skills .skills-content .column{
+        width:100%;
+        margin-bottom:35px;
+    }
+
+    .skills .skills-content .left .text{
+        font-size:30px;
+        font-weight:600;
+    }
+
+}
+
+@media(max-width:500px){
+    .home .home-content .text-2{
+        font-size:30px;
+        color:#000;
+    }
+    
+    .home .home-content .text-3{
+        font-size:20px;
+        color:#000;
+    }
+
+    .image{
+        height:20vh;
+    }
+
+    .home .home-content a{
+        display:inline-block;
+        background:crimson;
+        color:#fff;
+        font-size:15px;
+        padding:12px 36px;
+        font-family:"Century Gothic";
+        margin-top:20px;
+        border-radius:6px;
+        border:2px solid crimson;
+        transition:all 0.3s ease;
+    }
+    
+    .home .home-content a:hover{
+        color:crimson;
+         background:none;
+    }
+
+    .home{
+    display:flex;
+    background:url("image/dupage-web-design.jpg") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    height:100vh;
+    width:69vh;
+    min-height:500px;
+    font-family:"Century Gothic";
+    color:#fff;
+}
+
+
+}
